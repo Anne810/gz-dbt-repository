@@ -10,6 +10,12 @@ SELECT
     date_date,
     ROUND ((margin + shipping_fee - logCost - ship_cost),2) AS operational_margin,
     quantity,
+    revenue,
+    purchase_cost,
+    margin,
+    shipping_fee,
+    logCost,
+    ship_cost
 FROM operational
 
 

@@ -1,6 +1,7 @@
 WITH sales AS (
     SELECT
     orders_id
+    , products_id
     ,date_date
     ,revenue
     ,quantity
@@ -11,9 +12,10 @@ USING (products_id))
 
 SELECT
     orders_id
+    ,products_id
     , date_date
     ,revenue
     ,quantity
-    , purchase_cost  
+    ,purchase_cost  
     ,ROUND ((revenue - purchase_cost),2) AS margin
 FROM sales

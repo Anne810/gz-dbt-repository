@@ -2,7 +2,7 @@ WITH campaign_day AS (
     SELECT 
 *
 FROM {{ ref('int_campaigns') }} AS c
-JOIN {{ ref('finance_days') }} AS f
+JOIN {{ ref('mart_finance_days') }} AS f
 USING (date_date))
 
 SELECT

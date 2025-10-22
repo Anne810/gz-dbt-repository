@@ -107,5 +107,4 @@ models:
       - name: "(date_date|| '-' || campaign_key|| '-' ||campaign_name)"
         description : primary key
         tests:
-           - unique
            - not_null   

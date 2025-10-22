@@ -104,7 +104,7 @@ models:
   - name: int_campaigns
     description: toutes les campagnes
     columns: 
-      - name: "(date_date|| '-' || campaign_key)"
+      - name: "(date_date|| '-' || campaign_key|| '-' ||campaign_name)"
         description : primary key
         tests:
            - unique

@@ -31,7 +31,43 @@ sources:
                tests:
                  - unique
                  - not_null
-                 
+         - name: adwords
+           identifier: raw_gz_adwords
+           description: add campaign and price - google
+           columns:
+             - name: date_date
+               description: primary key of the table
+               tests:
+                 - unique
+                 - not_null 
+         - name: bing
+           identifier: raw_gz_bing
+           description: add campaign and price -bing
+           columns:
+             - name: date_date
+               description: primary key of the table
+               tests:
+                 - unique
+                 - not_null                                  
+         - name: criteo
+           identifier: raw_gz_criteo
+           description: add campaign and price - criteo
+           columns:
+             - name: date_date
+               description: primary key of the table
+               tests:
+                 - unique
+                 - not_null        
+         - name: facebook
+           identifier: raw_gz_facebook
+           description: add campaign and price - facebook
+           columns:
+             - name: date_date
+               description: primary key of the table
+               tests:
+                 - unique
+                 - not_null                                             
+                                  
 models:
   - name: int_orders_margin
     description: calcul de le marge
